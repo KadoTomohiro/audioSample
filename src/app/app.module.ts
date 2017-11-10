@@ -3,6 +3,8 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
+import { VoiceService } from './voice.service';
+import { AudioService } from './audio.service';
 
 
 @NgModule({
@@ -12,7 +14,10 @@ import { AppComponent } from './app.component';
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [
+    VoiceService,
+    AudioService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
